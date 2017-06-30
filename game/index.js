@@ -1,6 +1,16 @@
-var Math2 = require('./libs/Math2');
-var pixi = require('pixi.js');
+'use strict';
+
+
+var App = require('./src/app');
+
 
 window.addEventListener('DOMContentLoaded', function() {
-    Math2().falsey();
+
+    console.clear();
+
+    document.body.style.margin = 0;
+    document.body.style.padding = 0;
+
+    window.app = new App();
+
 });
